@@ -1,2 +1,7 @@
-User-agent: *
+User-Agent: *
 Disallow: /siatube/
+Disallow: /119sys/
+Disallow: /fdma/
+Disallow: /fukufuku/
+Disallow: /speed/
+Disallow: /empire/
