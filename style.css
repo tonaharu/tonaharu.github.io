@@ -8,6 +8,18 @@
 body {
   font-family: 'NotoSansJP', sans-serif;
 }
+#upper {
+  text-align: center;
+}
+select {
+  font-size: 18px;
+}
+input {
+  font-size: 18px;
+}
+button{
+  font-size: 18px;
+}
 footer {
   text-align: center;
 }
