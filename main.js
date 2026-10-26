@@ -13,10 +13,10 @@ async function search() {
   } else if (engine == 'duckduckgo') {
     window.open(`https://duckduckgo.com/search?q=${word}`, '_blank');
   } else if (engine == 'baidu') {
-    window.open(`https://baidu.com/search?word=${word}`, '_blank');
+    window.open(`https://baidu.com/?word=${word}`, '_blank');
   } else if (engine == 'ecosia') {
     window.open(`https://ecosia.org/search?q=${word}`, '_blank')
-  } else {
+  } else if (engine == 'alleng') {
     window.open(`https://google.com/search?q=${word}&ei=UTF-8`, '_blank');
     await sleep(200);
     window.open(`https://bing.com/search?q=${word}`, '_blank');
@@ -24,5 +24,7 @@ async function search() {
     window.open(`https://duckduckgo.com/search?q=${word}`, '_blank');
     await sleep(200);
     window.open(`https://baidu.com/search?word=${word}`, '_blank');
+  } else {
+    window.open(`https://google.com/search?q=${word}&ei=UTF-8`, '_blank');
   }
 }
