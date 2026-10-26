@@ -3,7 +3,7 @@ const qbox = document.getElementById('search');
 
 const sleep = (ms) => new Promise(resolve => SetTimeout(resolve, ms));
 
-function search() {
+async function search() {
   const engine = engsel.value;
   const word = encodeURIComponent(qbox.value);
   if (engine == 'google') {
