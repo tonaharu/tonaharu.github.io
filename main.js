@@ -1,5 +1,6 @@
 const engsel = document.getElementById('engine');
 const qbox = document.getElementById('search');
+const sbbt = document.getElementById('sb');
 
 const sleep = (ms) => new Promise(resolve => SetTimeout(resolve, ms));
 
@@ -28,3 +29,9 @@ async function search() {
     window.open(`https://google.com/search?q=${word}&ei=UTF-8`, '_blank');
   }
 }
+
+sbbt.addEventLinstener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    search();
+  }
+});
