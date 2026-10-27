@@ -4,6 +4,13 @@ body {
 #upper {
   text-align: center;
 }
+#search {
+  width: 400px;
+}
+#sb {
+  color: white;
+  font-color: black;
+}
 select {
   font-size: 18px;
 }
